@@ -1,4 +1,7 @@
-﻿#include <iostream>
+﻿/*Дадаць інтэрфейс графічны. Можа зрабіць як мабільны дадатак. Перарабіць, бо можна зрабіць менш. 
+Дадаць магчымасць змены мовы БЕЛ/POL/ENG*/
+
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -292,7 +295,15 @@ void Input(Library* lib) {
 
 int main() {
     Library* library = stwarLibrary();
+
+
+    addBook(library, "Pan Tadeusz", "Adam Mickiewicz", 1, "Wydawnictwo Narodowe", "1834-06-28");
+    addBook(library, "Dziedzictwo", "Janka Kupała", 1, "Bialoriskie utwory", "1991-01-01");
+    addBook(library, "Władca Pierscieni", "Tolkien", 2, "New Zealend", "1955-05-25");
+    addBook(library, "1984", "George Orwell", 1, "Big brother", "2020-08-09");
+    addBook(library, "Zbrodnia i kara", "Fiodor Dostojewski", 1, "Rosja", "1900-01-01");
+    addBook(library, "Mistrz i Malgorzata", "Michail Bulhakow", 1, "WarszawaExp", "1967-01-01");
+    addBook(library, "Harry Potter i Kamien Filozoficzny", "J.K. Rowling", 1, "221bBackerStreet", "1997-06-26");
     Input(library);
-    freeLibrary(library);
     return 0;
 }
